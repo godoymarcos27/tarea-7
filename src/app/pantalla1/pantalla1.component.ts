@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { tarjeta1 } from './tarjeta1';
+
 
 @Component({
   selector: 'app-pantalla1',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Pantalla1Component implements OnInit {
 
-  constructor() { }
+ @Input() tarjeta?: tarjeta1
+
+ constructor() { }
 
   ngOnInit(): void {
   }
 
 }
+ 
+ 
